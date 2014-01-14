@@ -7,6 +7,6 @@
     <string name="interest">Porcentaje de Interes</string>
     <string name="years">Ano(s)</string>
     <string name="result" formatted="false">El interes de $%.2f, a una taza de %.2f%% para %d ano(s) es $%.2f</string>
-    <string name="calculate">CALCULAR</string>
+    <string name="calculate">CALCULA</string>
 
 </resources>
