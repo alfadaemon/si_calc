@@ -15,7 +15,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="14dp"
-        android:text="Principal Ammount ($)" />
+        android:text="@string/principal" />
 
     <EditText
         android:id="@+id/edit_principal"
@@ -46,7 +46,7 @@
         android:layout_alignLeft="@+id/edit_interest"
         android:layout_below="@+id/edit_principal"
         android:layout_marginTop="27dp"
-        android:text="Interest Rate" />
+        android:text="@string/interest" />
 
     <TextView
         android:id="@+id/text_years"
@@ -64,7 +64,7 @@
         android:layout_alignBottom="@+id/text_years"
         android:layout_marginLeft="31dp"
         android:layout_toRightOf="@+id/text_years"
-        android:text="Year(s)" />
+        android:text="@string/interest" />
 
     <SeekBar
         android:id="@+id/seek_years"
@@ -82,7 +82,7 @@
         android:layout_alignLeft="@+id/seek_years"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/seek_years"
-        android:text="Calculate" />
+        android:text="@string/calculate" />
 
     <TextView
         android:id="@+id/text_result"
@@ -91,7 +91,7 @@
         android:layout_alignLeft="@+id/seek_years"
         android:layout_below="@+id/seek_years"
         android:layout_marginTop="14dp"
-        android:text="The interest rate for $0.00 at a rate of 0.0% for 0 year(s) is $0.00"
+        android:text="@string/result"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

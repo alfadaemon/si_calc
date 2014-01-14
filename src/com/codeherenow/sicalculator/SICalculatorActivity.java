@@ -48,8 +48,6 @@ public class SICalculatorActivity extends Activity {
 		
 		seek_years = (SeekBar) findViewById(R.id.seek_years);
 		
-		txt_years.setText(String.valueOf(45));
-		
 		btn_calculate.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -61,10 +59,11 @@ public class SICalculatorActivity extends Activity {
 				interest_rate = Double.parseDouble(interest.getText().toString());
 				years = seek_years.getProgress(); 
 				
+				String str_result = getString(R.string.result);
 				switch (v.getId()) {
 					case R.id.btn_calculate:
 						result = Calculate(ammount, interest_rate, years);
-						txt_result.setText(String.format("The interest for $%.2f, at a rate of %.2f for %d year(s) is $%.2f", 
+						txt_result.setText(String.format(str_result, 
 								ammount, interest_rate, years, result));
 						break;
 				}
