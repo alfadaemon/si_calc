@@ -3,10 +3,10 @@
 
     <string name="app_name">Interes Simple</string>
     <string name="action_settings">Configuracion</string>
-    <string name="principal">Cantidad ($)</string>
-    <string name="interest">Porcentaje de Interes</string>
-    <string name="years">Ano(s)</string>
-    <string name="result" formatted="false">El interes de $%.2f, a una taza de %.2f%% para %d ano(s) es $%.2f</string>
-    <string name="calculate">CALCULA</string>
+    <string name="principal">&lt;b>Cantidad ($)&lt;/b></string>
+    <string name="interest">&lt;b>Porcentaje de Interes&lt;/b></string>
+    <string name="years">&lt;b>Ano(s)&lt;/b></string>
+    <string name="result" formatted="false">El interes de &lt;b>$%.2f&lt;/b>, a una taza de &lt;b>%.2f&lt;/b>%% para &lt;b>%d&lt;/b> ano(s) es &lt;b>$%.2f&lt;/b></string>
+    <string name="calculate">&lt;b>CALCULAR&lt;/b></string>
 
 </resources>

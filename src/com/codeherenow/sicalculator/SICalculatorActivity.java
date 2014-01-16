@@ -15,6 +15,7 @@ package com.codeherenow.sicalculator;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -27,7 +28,8 @@ public class SICalculatorActivity extends Activity {
 	
 	private EditText principal, interest;
 	private SeekBar seek_years;
-	private TextView txt_result;
+	private TextView txt_result, txt_principal, txt_interest;
+	private TextView txt_yearstxt;
 	private Button btn_calculate;
 	 
 	public TextView txt_years;
@@ -37,14 +39,24 @@ public class SICalculatorActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.sicalculator);
 		
-		//final TextView txt_years;
-		
 		principal  = (EditText) findViewById(R.id.edit_principal);
 		interest   = (EditText) findViewById(R.id.edit_interest);
 		txt_years  = (TextView) findViewById(R.id.text_years);
+
+		txt_principal = (TextView) findViewById(R.id.text_principal);
+		txt_principal.setText(Html.fromHtml(getString(R.string.principal)));
+		
+		txt_interest = (TextView) findViewById(R.id.text_interest);
+		txt_interest.setText(Html.fromHtml(getString(R.string.interest)));
+		
+		txt_yearstxt  = (TextView) findViewById(R.id.text_yeartxt);
+		txt_yearstxt.setText(Html.fromHtml(getString(R.string.years)));
+		
 		txt_result = (TextView) findViewById(R.id.text_result);
+		txt_result.setText(Html.fromHtml(getString(R.string.result)));
 		
 		btn_calculate  = (Button) findViewById(R.id.btn_calculate);
+		btn_calculate.setText(Html.fromHtml(getString(R.string.calculate)));
 		
 		seek_years = (SeekBar) findViewById(R.id.seek_years);
 		
@@ -63,8 +75,8 @@ public class SICalculatorActivity extends Activity {
 				switch (v.getId()) {
 					case R.id.btn_calculate:
 						result = Calculate(ammount, interest_rate, years);
-						txt_result.setText(String.format(str_result, 
-								ammount, interest_rate, years, result));
+						txt_result.setText(Html.fromHtml(String.format(str_result, 
+								ammount, interest_rate, years, result)));
 						break;
 				}
 			}

@@ -3,10 +3,10 @@
 
     <string name="app_name">SI Calculator</string>
     <string name="action_settings">Settings</string>
-    <string name="principal">Principal Amount ($)</string>
-    <string name="interest">Interest Rate</string>
-    <string name="years">Year(s)</string>
-    <string name="result" formatted="false">The interest for $%.2f, at a rate of %.2f%% for %d year(s) is $%.2f</string>
-    <string name="calculate">CALCULATE</string>
+    <string name="principal">&lt;b>Principal Amount ($)&lt;/b></string>
+    <string name="interest">&lt;b>Interest Rate&lt;/b></string>
+    <string name="years">&lt;b>Year(s)&lt;/b></string>
+    <string name="result" formatted="false">The interest for &lt;b>$%.2f&lt;/b>, at a rate of &lt;b>%.2f&lt;/b>%% for &lt;b>%d&lt;/b> year(s) is &lt;b>$%.2f&lt;/b></string>
+    <string name="calculate">&lt;b>CALCULATE&lt;/b></string>
 
 </resources>
